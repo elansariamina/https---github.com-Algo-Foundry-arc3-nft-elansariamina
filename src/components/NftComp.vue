@@ -42,6 +42,7 @@ export default {
     methods: {
         async handleReceiveNFT() {
             this.$emit("receiveNFT", this.nft);
+            console.log(this.nft);
         }
     },
     async mounted() {},

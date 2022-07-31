@@ -1,15 +1,15 @@
 default:
-    timestamp: 1658144893705
+    timestamp: 1659265329638
     metadata: {}
     asa:
         acsCoinASA:
             creator: HU3FJOKQUEBZLOJGJTVBYSBU4NNSEZX523PPCJHS4ABGDSUQ6YKOYNMT7A
-            txId: KSORRMULU4EQKWRKNMYITDYFX6MUIU62QUWJVQY67F476OINTBKA
-            assetIndex: 108
-            confirmedRound: 22800
+            txId: GA2LA37J3O33FHRMDNQ4BNBVTWOYJWJEVRQX2DAN5JGW3NUPOV3A
+            assetIndex: 170
+            confirmedRound: 45682
             assetDef:
                 total: 1000000
-                decimals: 0
+                decimals: 2
                 defaultFrozen: false
                 unitName: ACS
                 url: url

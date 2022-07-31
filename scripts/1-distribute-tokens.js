@@ -20,7 +20,7 @@ async function run(runtimeEnv, deployer) {
         type: types.TransactionType.OptInASA,
         sign: types.SignType.SecretKey,
         fromAccount: receiver,
-        assetID: 76,
+        assetID: 170,
         payFlags: { totalFee: 1000 }
     })
     
@@ -31,7 +31,7 @@ async function run(runtimeEnv, deployer) {
         fromAccount: master,
         toAccountAddr: receiver.addr,
         amount: 100,
-        assetID: 76,
+        assetID: 170,
         payFlags: { totalFee: 1000 }
     })
 

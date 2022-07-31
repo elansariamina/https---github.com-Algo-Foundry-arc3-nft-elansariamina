@@ -6,12 +6,16 @@ import { convertByte32ToIpfsCidV0 } from "../scripts/helpers/ipfs2bytes32.js";
 
 const purchaseNFT = async (creator, receiver, nftId, fungibleTokenId) => {
     // create transactions here before calling sendAlgoSignerTransaction from wallet.js
+    console.log(creator);
+    console.log(receiver);
+    console.log(nftId);
+    console.log(fungibleTokenId);
     
     // write your code here
     if (
         !(creator && receiver && nftId && fungibleTokenId)
     ) {
-        console.error("error", creator, receiver, nftId, fungibleTokenId);
+        console.log("error");
         return;
     }
 
@@ -19,7 +23,7 @@ const purchaseNFT = async (creator, receiver, nftId, fungibleTokenId) => {
 
     // create suggested parameters
     const suggestedParams = await algodClient.getTransactionParams().do();
-
+    console.log("I'm here");
 
   // Txn 1: Buyer opts into the asset
   let txn1 = algosdk.makeAssetTransferTxnWithSuggestedParams(
@@ -66,9 +70,9 @@ const purchaseNFT = async (creator, receiver, nftId, fungibleTokenId) => {
 
   return await wallets.sendAlgoSignerTransaction(txns, algodClient);
 
-
+  
 }
-
+console.log("I'm here");
 const getAccountInfo = async (address, network) => {
     const algodClient = getAlgodClient(network);
 
@@ -94,4 +98,4 @@ export default {
     checkMetadataHash,
     getAccountInfo,
 };
-
+console.log("I'm here");
